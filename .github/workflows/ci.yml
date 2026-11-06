@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.13", "3.14", "3.15"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: pip install --no-deps -e .
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+      - name: Compare a CLI run with the expected files
+        run: |
+          ingest-project --config config.yaml --output outputs --check-date 2026-04-01
+          diff outputs/clean_rows.csv tests/expected/clean_rows.csv
+          diff outputs/rejected_rows.csv tests/expected/rejected_rows.csv

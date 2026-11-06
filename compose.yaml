@@ -1,0 +1,8 @@
+# docker compose up --build                          check the sample data, write ./outputs
+# docker compose run --rm ingest-project pytest -q   run the tests
+services:
+  ingest-project:
+    build: .
+    image: ingest-project:0.1.0
+    volumes:
+      - ./outputs:/app/outputs

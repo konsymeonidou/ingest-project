@@ -1,0 +1,13 @@
+sample_id,lab,organoid_id,batch,measurement_type,value,unit,collected_at
+A-001,lab_A,ORG-A01,BATCH-A1,viability_pct,87.5,%,2026-03-15T00:00:00+00:00
+A-002,lab_A,ORG-A02,BATCH-A1,viability_pct,91.2,%,2026-03-15T00:00:00+00:00
+A-003,lab_A,ORG-A03,BATCH-A1,viability_pct,73.4,%,2026-03-15T00:00:00+00:00
+A-006,lab_A,ORG-A06,BATCH-A2,viability_pct,90.1,%,2026-03-16T00:00:00+00:00
+B-101,lab_B,ORG-B01,BATCH-B1,mea_burst_rate_hz,12.4,Hz,2026-03-15T09:00:00+00:00
+B-102,lab_B,ORG-B02,BATCH-B1,mea_burst_rate_hz,15.8,Hz,2026-03-15T09:05:00+00:00
+B-103,lab_B,ORG-B03,BATCH-B1,mea_burst_rate_hz,9.1,Hz,2026-03-15T09:10:00+00:00
+B-104,lab_B,ORG-B04,BATCH-B1,mea_burst_rate_hz,11.0,Hz,2026-03-15T09:15:00+00:00
+C-201,lab_C,ORG-C01,BATCH-C1,gfap_ng_ml,120.5,ng/mL,2026-03-15T10:00:00+00:00
+C-202,lab_C,ORG-C02,BATCH-C1,gfap_ng_ml,98.3,ng/mL,2026-03-15T10:05:00+00:00
+C-203,lab_C,ORG-C03,BATCH-C1,gfap_ng_ml,105.7,ng/mL,2026-03-15T10:10:00+00:00
+C-204,lab_C,ORG-C04,BATCH-C1,gfap_ng_ml,101.9,ng/mL,2026-03-15T10:15:00+00:00

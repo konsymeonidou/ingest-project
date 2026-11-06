@@ -1,0 +1,8 @@
+SampleID,OrganoidID,Batch,Type,Value,Unit,Date
+A-001,ORG-A01,BATCH-A1,viability_pct,87.5,%,15/03/2026
+A-002,ORG-A02,BATCH-A1,viability_pct,91.2,%,15/03/2026
+A-003,ORG-A03,BATCH-A1,viability_pct,73.4,%,15/03/2026
+A-004,,BATCH-A1,viability_pct,88.0,%,15/03/2026
+A-005,ORG-A05,BATCH-A2,viability_pct,76.3,percent,16/03/2026
+A-006,ORG-A06,BATCH-A2,viability_pct,90.1,%,16/03/2026
+A-007,ORG-A07,BATCH-A2,viability_pct,112,%,16/03/2026

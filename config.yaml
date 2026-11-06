@@ -1,0 +1,66 @@
+# Settings for the validation step. All data is synthetic.
+# File paths are relative to this file.
+# The check date is not set here. Pass --check-date on the command line to fix it.
+
+# What a valid row looks like for each measurement. Min and max are allowed values.
+rules:
+  viability_pct:
+    unit: "%"
+    min_value: 0
+    max_value: 100
+  mea_burst_rate_hz:
+    unit: "Hz"
+    min_value: 0
+    max_value: 50
+  gfap_ng_ml:
+    unit: "ng/mL"
+    min_value: 0
+    max_value: 1000
+
+# How to read each lab's file. Under `columns`, the left side is our field name
+# and the right side is the column name in that lab's file.
+labs:
+  lab_A:
+    file: sample_data/lab_A.csv
+    delimiter: ","
+    decimal_mark: "."
+    date_format: "%d/%m/%Y"
+    measurements: [viability_pct]
+    columns:
+      sample_id: "SampleID"
+      organoid_id: "OrganoidID"
+      batch: "Batch"
+      measurement: "Type"
+      value: "Value"
+      unit: "Unit"
+      collected_at: "Date"
+
+  lab_B:
+    file: sample_data/lab_B.csv
+    delimiter: ","
+    decimal_mark: "."
+    date_format: "iso"
+    measurements: [mea_burst_rate_hz]
+    columns:
+      sample_id: "sample_id"
+      organoid_id: "organoid_id"
+      batch: "batch"
+      measurement: "measurement"
+      value: "value"
+      unit: "units"
+      collected_at: "timestamp"
+
+  lab_C:
+    file: sample_data/lab_C.csv
+    delimiter: ";"
+    decimal_mark: ","
+    date_format: "%Y-%m-%d %H:%M"
+    measurements: [gfap_ng_ml]
+    columns:
+      sample_id: "id"
+      organoid_id: "organoid"
+      batch: "batch_ref"
+      measurement: "kind"
+      value: "val"
+      unit: "unit"
+      collected_at: "when"

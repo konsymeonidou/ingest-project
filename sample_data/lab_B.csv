@@ -1,0 +1,8 @@
+sample_id,organoid_id,batch,measurement,value,units,timestamp
+B-101,ORG-B01,BATCH-B1,mea_burst_rate_hz,12.4,Hz,2026-03-15T09:00:00
+B-102,ORG-B02,BATCH-B1,mea_burst_rate_hz,15.8,Hz,2026-03-15T09:05:00
+B-103,ORG-B03,BATCH-B1,mea_burst_rate_hz,9.1,Hz,2026-03-15T09:10:00
+B-104,ORG-B04,BATCH-B1,mea_burst_rate_hz,11.0,Hz,2026-03-15T09:15:00
+B-105,ORG-B05,BATCH-B2,mea_burst_rate_hz,14.2,Hz,2030-01-01T00:00:00
+B-106,ORG-B06,BATCH-B2,mea_burst_rate_hz,nan,Hz,2026-03-15T09:25:00
+B-107,ORG-B07,BATCH-B2,mea_burst_rate_hz,10.6,Hz

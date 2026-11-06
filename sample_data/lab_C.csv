@@ -1,0 +1,8 @@
+id;organoid;batch_ref;kind;val;unit;when
+C-201;ORG-C01;BATCH-C1;gfap_ng_ml;120,5;ng/mL;2026-03-15 10:00
+C-202;ORG-C02;BATCH-C1;gfap_ng_ml;98,3;ng/mL;2026-03-15 10:05
+C-203;ORG-C03;BATCH-C1;gfap_ng_ml;105,7;ng/mL;2026-03-15 10:10
+C-204;ORG-C04;BATCH-C1;gfap_ng_ml;101,9;ng/mL;2026-03-15 10:15
+C-205;ORG-C05;BATCH-C2;ph;7,4;pH;2026-03-15 10:20
+C-206;ORG-C06;BATCH-C2;gfap_ng_ml;102.2;ng/mL;2026-03-15 10:25
+C-207;ORG-C07;BATCH-C2;gfap_ng_ml;99,9;ng/mL;15/03/2026 10:30
