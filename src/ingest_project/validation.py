@@ -96,7 +96,6 @@ def read_measurement(row: dict[str, str], lab: LabSettings) -> Measurement:
     )
 
 
-
 def check_measurement(
     measurement: Measurement, rules: dict[str, Rule], check_date: datetime
 ) -> None:
@@ -123,7 +122,6 @@ def check_measurement(
             "DATE_IN_FUTURE",
             f"collected {measurement.collected_at.isoformat()}, after {check_date.isoformat()}",
         )
-
 
 
 def check_file(
